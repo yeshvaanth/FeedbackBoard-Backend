@@ -10,7 +10,7 @@ const authMiddleware = require("./middleware/auth");
 const app = express();
 app.use(
   cors({
-    origin: "https://68ff016f673ad3ffa4292e32--feedbackfrontend.netlify.app", // your frontend URL
+    origin: "https://68ff0c81433d7800082d7da0--feedbackfrontend.netlify.app", // your frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
