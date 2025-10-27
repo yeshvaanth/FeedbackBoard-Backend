@@ -8,10 +8,13 @@ const { getFeedbacks, addFeedback, voteFeedback, updateFeedback } = require("./c
 const authMiddleware = require("./middleware/auth");
 
 const app = express();
-app.use(cors({
-  origin: "http://localhost:5173",
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "https://68ff016f673ad3ffa4292e32--feedbackfrontend.netlify.app", // your frontend URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 
